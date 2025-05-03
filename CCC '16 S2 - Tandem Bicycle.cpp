@@ -11,9 +11,8 @@ int main() {
     for (int i = 0; i < n; i++) cin >> d[i];
     for (int i = 0; i < n; i++) cin >> p[i];
     
-    int z = sizeof(d) / sizeof(d[0]);
-    sort(d, d + z, greater<int>());
-    sort(p, p + z, greater<int>());
+    sort(d, d + n, greater<int>());
+    sort(p, p + n, greater<int>());
     
     if (q == 1) {
         for (int i = 0; i < n; i++) {
